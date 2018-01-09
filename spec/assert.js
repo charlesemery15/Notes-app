@@ -1,15 +1,21 @@
+
+
 var assert = {
-  isTrue: function(assertionToCheck) {
-    if (!assertionToCheck) {
-      throw new Error("Assertion failed: " + assertionToCheck + " is not truthy");
+  isTrue: function(testname, assertionToCheck) {
+    if (assertionToCheck === true){
+      console.log(testname + " passed!");
+    }
+    if (assertionToCheck === false) {
+      throw new Error(testname + " failed: " + assertionToCheck + " is not truthy");
     }
   },
-  isFalse: function(assertionToCheck) {
-    if (!assertionToCheck) {
-      throw new Error("Assertion failed: " + assertionToCheck + " is not false");
+
+  isFalse: function(testname, assertionToCheck) {
+    if (assertionToCheck === false){
+      console.log(testname + " passed!");
+    }
+    if (assertionToCheck === true) {
+      throw new Error(testname + " failed: " + assertionToCheck + " is not truthy");
     }
   }
 };
-
-
-// assert.isFalse(note.description === "hi")

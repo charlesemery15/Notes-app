@@ -1,7 +1,7 @@
 function testNoteListContainsNotePad() {
   var notepad = new Notepad();
   var notelist = new Notelist(notepad);
-  assert.isTrue(notelist.currentNotepad === notepad);
+  assert.isTrue("Notelist contains notepad", notelist.currentNotepad === notepad);
 };
 
 testNoteListContainsNotePad();
@@ -14,7 +14,7 @@ function testReturnsNoteList() {
   notepad.addNote(note2);
   var notelist = new Notelist(notepad);
   var test = notelist.returnToHTML();
-  assert.isTrue(test === "<ul><li>Hi Keran</li><li>Hi Tom</li></ul>")
+  assert.isTrue("Returning notes", test === "<ul><li>Hi Keran</li><li>Hi Tom</li></ul>")
 };
 
 testReturnsNoteList();
