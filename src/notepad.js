@@ -7,6 +7,12 @@
     // }
   };
 
+  Notepad.prototype.createNote = function(description){
+    var note = new Note(description);
+    this.addNote(note);
+  };
+
+
   Notepad.prototype.addNote = function(note) {
     this.notes.push(note);
   };
