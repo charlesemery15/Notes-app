@@ -6,6 +6,7 @@ function testNoteListContainsNotePad() {
 
 testNoteListContainsNotePad();
 
+
 function testReturnsNoteList() {
   var note1 = new Note("Hi Keran");
   var note2 = new Note("Hi Tom");
@@ -18,3 +19,17 @@ function testReturnsNoteList() {
 };
 
 testReturnsNoteList();
+
+
+function limitViewTo20Chars() {
+  // fakeNote = {
+  //   description : 'example description should be limited'
+  // };
+  var note1 = new Note("example description ijdafijdfs");
+  var notepad = new Notepad();
+  notepad.addNote(note1);
+  var notelist = new Notelist(notepad);
+  assert.isTrue("It should limit the note to twenty characters", notelist.twentyChars(note1) === 'example description');
+};
+
+limitViewTo20Chars();

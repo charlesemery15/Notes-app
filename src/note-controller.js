@@ -26,9 +26,3 @@ controller = new Controller();
 controller.getHTML('app');
 
 };
-
-/* testing
-
-test new controller is instatiated
-
-mock the element by creating a fake div with id app*/

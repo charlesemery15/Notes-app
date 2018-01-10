@@ -1,5 +1,5 @@
 function testControllerIsInstantiated(){
-  
+
 
   var controller = new Controller();
   // console.log(controller);
