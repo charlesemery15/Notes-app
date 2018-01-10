@@ -8,9 +8,6 @@ function testControllerIsInstantiated(){
 
   controller.getHTML('app');
 
-  // console.log(html);
-  // console.log("html above, get element below");
-  // console.log(document.getElementById('app').innerHTML);
   assert.isTrue("app div contains html of the description of the notes", document.getElementById('app').innerHTML === html);
 };
 

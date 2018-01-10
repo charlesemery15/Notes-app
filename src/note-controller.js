@@ -6,9 +6,9 @@
   (function(exports) {
     function Controller(notepad = new Notepad()) {
       this.notepad = notepad;
-      this.notepad.createNote("Favourite drink: seltzer");
-      this.notepad.createNote("Chuppa chuuups");
-      this.notepad.createNote("Pesto");
+      this.notepad.createNote("1234567891012345678901234fdasdfadsfadfadf5678901234567890");
+      this.notepad.createNote("Chuppa dfadsadsffdasfadfdafdasfadsfadsfadfadsf");
+      this.notepad.createNote("Pesadfasdfadsfadsfadfasdasdfasdfadfadffadsfdfato");
 
       this.notelistview = new Notelist(this.notepad);
     };

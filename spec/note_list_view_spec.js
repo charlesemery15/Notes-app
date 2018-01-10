@@ -29,7 +29,7 @@ function limitViewTo20Chars() {
   var notepad = new Notepad();
   notepad.addNote(note1);
   var notelist = new Notelist(notepad);
-  assert.isTrue("It should limit the note to twenty characters", notelist.twentyChars(note1) === 'example description');
+  assert.isTrue("It should limit the note to twenty characters", notelist.twentyChars(note1) === 'example description ');
 };
 
 limitViewTo20Chars();
